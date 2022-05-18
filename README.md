@@ -2,8 +2,10 @@
 
 Welcome to my portfolio, I will be updating as I go on
 <br />
+
 a link to the site: https://sqpr99.github.io/portfolio/
 <br />
+
 Portfolio consists of a nav bar at the top with the subheaders: About me, Works, Links, Contact Me, and Resume
 <br />
 After scrolling down you will notice subheaders with each of them with a body paragraph respectively
