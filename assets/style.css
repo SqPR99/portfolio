@@ -38,13 +38,14 @@ header {
 /* Background image */
 .bg-image {
     background-size: 100%;
-    padding: 30em;
     background-image: url(./images/icerink.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 /* Also background image */
@@ -56,8 +57,16 @@ header {
     background-size: cover;
     background-color: rgba(46, 45, 44, 0.701);
     background-blend-mode: multiply;
+    width: 100%;
 }
-
+.pfp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Main content section (Hello my name is patrick) */
 .content {
     background-color: rgba(0, 0, 0, 0);
@@ -66,7 +75,7 @@ header {
     text-shadow: 2px 2px 4px orange;
     display: flex;
     flex-wrap: wrap;
-
+    width: 50%;
 }
 
 /* "Patrick Ross" in main content */
@@ -92,12 +101,11 @@ img {
     border-radius: 50%;
     max-width: 300px;
     height: auto;
-    display: flex;
     background-color: rgba(46, 45, 44, 0.701);
     background-blend-mode: multiply;
-    float: left;
-    margin: 100px;
-    position: relative; right: 25px; top: -100px;
+    margin: 20px;
+    width: calc(50% - 40px);
+    height: calc(50% - 40px);
 }
 
 /* Main text */
@@ -208,4 +216,10 @@ img {
 
 .break {
     background-color: var(--black);
+}
+
+@media only screen and (max-width:600px) {
+    .pfp {
+        flex-direction: column;
+    }   
 }
